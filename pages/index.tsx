@@ -12,13 +12,29 @@ import adi from "../public/hello.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import im1 from "../public/chat.png";
-import im2 from "../public/web2.png";
-import im3 from "../public/web3.png";
-import im4 from "../public/web4.png";
+import im1 from "../public/chatFinal.png";
+import im2 from "../public/newsfinal.png";
+import im3 from "../public/nodefinal.png";
+import im4 from "../public/textfinal.png";
 import im5 from "../public/web5.png";
 import im6 from "../public/web6.png";
+import im7 from "../public/cppimg.png";
+import im8 from "../public/JavaScript.png";
+import im9 from "../public/HTML.png";
+import im10 from "../public/CSS.png";
+import im11 from "../public/Python.png";
+import im12 from "../public/Dart.png";
+import im13 from "../public/reactjs.png";
+import im14 from "../public/next.png";
+import im15 from "../public/flut.jpg";
+import im16 from "../public/node.png";
+import im17 from "../public/git.png";
+import im18 from "../public/github.png";
+import im19 from "../public/gitlab.png";
 import { useState } from "react";
+
+
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -60,8 +76,8 @@ export default function Home() {
           </nav>
 
           {/* ****************Name and basic information about myself*************** */}
-          <div className="text-center p-10 ">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+          <div className="text-center p-10 " >
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl " >
               Aditya Shitale
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl  dark:text-white">
@@ -75,7 +91,7 @@ export default function Home() {
           </div>
 
           {/* *********************React icons with contact details************************ */}
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600  dark:text-white">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600  dark:text-white" data-aos="fade-right" >
             <a href="https://twitter.com/AdityaShitale" target="_blank">
               <AiFillTwitterCircle />
             </a>
@@ -97,7 +113,7 @@ export default function Home() {
           </div>
 
           {/* ****************emoji icon saying hi to visitor****************** */}
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 motion-safe:animate-fadeIn">
             <Image src={adi} alt="" layout="fill" objectFit="cover" />
           </div>
         </section>
@@ -106,10 +122,10 @@ export default function Home() {
         <section>
           {/* *****************************services i offer and description about it**************************** */}
           <div>
-            <h3 className="text-3xl py-1  dark:text-white">
-              Services I offfer
+            <h3 className="text-3xl py-1 font-bold  dark:text-white">
+              Skills I have
             </h3>
-            <p className="text-md py-2 leading-8 text-gray-800  dark:text-white">
+            <p className="text-md font-serif py-2 leading-8 text-gray-800  dark:text-white">
               I am a sophomore at{" "}
               <span className="text-teal-500">
                 Indian Institute of Information Technology, Kottayam
@@ -123,14 +139,14 @@ export default function Home() {
               prospect of working as an Intern.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              I offer from a wide range of services, including frontend development,
+              backend development,App developement,Web developement.
             </p>
           </div>
           {/* ***************************Card explaining SKills**************************** */}
           {/* *****************card #1************** */}
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl  my-10  dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl  my-10   dark:bg-white">
               <Image
                 src={design}
                 alt=""
@@ -140,54 +156,48 @@ export default function Home() {
               />
               <h3 className="text-lg font-medium pt-8 pb-2">Languages</h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
+              Creating elegant designs suited for your needs following core
                 design theory.
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">C++</p>
-              <p className="text-gray-800 py-1">JavaScript</p>
-              <p className="text-gray-800 py-1">HTML</p>
-              <p className="text-gray-800 py-1">CSS</p>
-              <p className="text-gray-800 py-1">Python</p>
-              <p className="text-gray-800 py-1">Dart</p>
+              <h4 className="py-4 text-teal-600">Languages  I use</h4>
+            <div> <Image className="display: inline hover:scale-150 duration-300" src={im7} alt="C++" height={50}/><p className="text-gray-800 font-bold py-1 pb-5">C++</p></div>
+           <div> <Image className="display: inline hover:scale-150 duration-300" src={im8} alt=""height={50}/>  <p className="text-gray-800 font-bold py-1 pb-5">JavaScript</p> </div>
+           <div> <Image className="display: inline hover:scale-150 duration-300" src={im9} alt=""height={50}/>  <p className="text-gray-800 font-bold py-1">HTML</p></div>
+           <div> <Image className="display: inline hover:scale-150 duration-300" src={im10} alt=""height={50}/> <p className="text-gray-800 font-bold py-1">CSS</p></div>
+           <div> <Image className="display: inline hover:scale-150 duration-300" src={im11} alt=""height={50}/> <p className="text-gray-800 font-bold py-1">Python</p></div>
+           <div> <Image className="display: inline hover:scale-150 duration-300" src={im12} alt=""height={50}/> <p className="text-gray-800 font-bold py-1">Dart</p></div>
             </div>
 
             {/* *****************card #2************** */}
 
-            <div className="text-center shadow-lg p-10 rounded-xl  my-10 dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl  my-10 dark:bg-white">
               <Image src={code} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Framework</h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
+              Creating elegant designs suited for your needs following core
                 design theory.
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">PhotoShop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">tailwind</p>
+              <h4 className="py-4 text-teal-600">Frameworks tools I use</h4>
+             <div> <Image  className="display: inline hover:scale-150 duration-300" height={50} src={im13} alt=""/> <p className="text-gray-800 font-bold py-1 pb-5">ReactJs</p></div> 
+             <div> <Image  className="display: inline hover:scale-150 duration-300" height={50} src={im16} alt=""/> <p className="text-gray-800 font-bold py-1 pb-5">NodeJs</p></div> 
+             <div> <Image  className="display: inline hover:scale-150 duration-300" height={50} src={im14} alt=""/> <p className="text-gray-800 font-bold py-1 pb-5">Next.js</p></div> 
+             <div> <Image  className="display: inline hover:scale-150 duration-300" height={50} src={im15} alt=""/> <p className="text-gray-800 font-bold py-1 pb-5">Flutter</p></div> 
             </div>
 
             {/* *****************card #3************** */}
 
-            <div className="text-center shadow-lg p-10 rounded-xl  my-10 dark:bg-white">
-              <Image
-                src={consulting}
-                alt=""
-                width={100}
-                loading="lazy"
-                height={100}
-              />
-              <h3 className="text-lg font-medium pt-8 pb-2">Skills</h3>
+            <div className="text-center shadow-2xl p-10 rounded-xl  my-10 dark:bg-white">
+              <Image src={consulting} alt="" width={100}  height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">tools i use</h3>
               <p className="py-2 ">
-                Creating elegant designs suited for your needs following core
+              Creating elegant designs suited for your needs following core
                 design theory.
               </p>
-              <h4 className="py-4 text-teal-600">Design tools I use</h4>
-              <p className="text-gray-800 py-1">PhotoShop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">tailwind</p>
+             <h4 className="py-4 text-teal-600">tools I use</h4>
+              <div> <Image  className="display: inline hover:scale-150 duration-300" height={50} src={im17} alt=""/> <p className="text-gray-800 font-bold py-1 pb-5">Github</p> </div>
+              <div> <Image  className="display: inline hover:scale-150 duration-300" height={50} src={im18} alt=""/> <p className="text-gray-800 font-bold py-1 pb-5">bash</p></div>
+              <div> <Image  className="display: inline hover:scale-150 duration-300" height={50} src={im19} alt=""/> <p className="text-gray-800 font-bold py-1 pb-5">Gitlab</p></div>
+        
             </div>
           </div>
         </section>
@@ -197,65 +207,80 @@ export default function Home() {
         <section>
           {/* ***************************portfolio explaining about my projects and experiences************************** */}
           <div>
-            <h3 className="text-3xl py-1  dark:text-white">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800  dark:text-white">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+            <h3 className="text-3xl py-1 font-bold  dark:text-white">Portfolio</h3>
+            <p className="text-md font-serif py-2 leading-8 text-gray-800  dark:text-white">
+              Since the start I am working as individual and created projects to
+              gain
+              <span className="text-teal-500"> Knowledge </span>
+              and to improve my<span className="text-teal-500"> Skills. </span>
+              Being a Junior at college, I have had the experience of creating
+              and also working on projects just for fun that has a good user
+              experience meanwhile being scalable and efficient under the hood.
+              I use NodeJS/FastAPI for the backend of most of the projects that
+              I make which have a ReactJS frontend.I also have basic Idea about
+              Flutter for App development.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+            <p className="text-md py-2 leading-8 font-burtons text-gray-800 dark:text-white">
+              Checkout my other projects............!  !  !
             </p>
+            <p className="font-serif text-md dark:text-white">Click on the image to go on respective repository</p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <Image
-                src={im1}
-                className="rounded-lg object-cover"
-                w-full
-                h-full
-                layout="responsive"
-                alt=""
-              ></Image>
+            <div className="basis-1/3 flex-1 ">
+              <a href="https://github.com/Aditya-Shitale/Chat-App" target="_blank">
+                <Image
+                  src={im1}
+                  className="rounded-lg object-cover hover:scale-110 duration-300"
+                  w-full
+                  h-full
+                  layout="responsive"
+                  alt=""
+                ></Image>   
+              </a>
             </div>
+
             <div className="basis-1/3 flex-1">
+              <a href="https://github.com/Aditya-Shitale/News_Media" target="_blank">
               <Image
                 src={im2}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110 duration-300"
                 w-full
                 h-full
                 layout="responsive"
                 alt=""
               ></Image>
+              </a>
             </div>
+
             <div className="basis-1/3 flex-1">
+            <a href="https://github.com/Aditya-Shitale/CloudNotebook" target="_blank">
               <Image
                 src={im3}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110 duration-300"
                 w-full
                 h-full
                 layout="responsive"
                 alt=""
               ></Image>
+              </a>
             </div>
+
             <div className="basis-1/3 flex-1">
+            <a href="https://github.com/Aditya-Shitale/TextEditor" target="_blank">
               <Image
                 src={im4}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110 duration-300"
                 w-full
                 h-full
                 layout="responsive"
                 alt=""
               ></Image>
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
               <Image
                 src={im5}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110 duration-300"
                 w-full
                 h-full
                 layout="responsive"
@@ -265,7 +290,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={im6}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110 duration-300"
                 w-full
                 h-full
                 layout="responsive"
@@ -278,7 +303,7 @@ export default function Home() {
         {/* ***************************SECTION 4 start FOOTER************************************* */}
 
         <section>
-          <span className="flex justify-center">
+          <span className="flex justify-center py-5">
             {" "}
             <AiFillHeart className="text-red-600 text-xl " />
             <span className="text-teal-500 font-burtons text-sm ">
