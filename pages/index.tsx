@@ -225,58 +225,67 @@ export default function Home() {
             </p>
             <p className="font-serif text-md dark:text-white">Click on the image to go on respective repository</p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <a href="https://github.com/Aditya-Shitale/Chat-App" target="_blank">
-                <Image
-                  src={im1}
-                  className="rounded-lg object-cover hover:scale-110 duration-300"
-                  w-full
-                  h-full
-                  layout="responsive"
-                  alt=""
-                ></Image>   
-              </a>
-            </div>
+<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 
-            <div className="basis-1/3 flex-1">
-              <a href="https://github.com/Aditya-Shitale/News_Media" target="_blank">
-              <Image
-                src={im2}
-                className="rounded-lg object-cover hover:scale-110 duration-300"
-                w-full
-                h-full
-                layout="responsive"
-                alt=""
-              ></Image>
-              </a>
-            </div>
+   {/* ***************************CHATAPP pic with info***************************** */}
+  <div className="basis-1/3 flex-1 ">
+    <div className="relative">
+      <a href="https://github.com/Aditya-Shitale/Chat-App" target="_blank">
+          <Image src={im1} className="rounded-lg object-cover hover:scale-110 duration-300"  w-full  h-full  layout="responsive"  alt="" />
+             <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
+                <p className="text-lg text-orange-500 font-bold">  Chat-App</p>
+                  <p className="text-xs text-teal-500">This a is chat Application based on React-Js and backend as firebase, here you can create an account by unique mail id's and also can set your profile picture, find friends by searching if they have an account on app</p>
+             </div>
+      </a>
+     </div>
 
-            <div className="basis-1/3 flex-1">
-            <a href="https://github.com/Aditya-Shitale/CloudNotebook" target="_blank">
-              <Image
-                src={im3}
-                className="rounded-lg object-cover hover:scale-110 duration-300"
-                w-full
-                h-full
-                layout="responsive"
-                alt=""
-              ></Image>
-              </a>
-            </div>
+  </div>
 
-            <div className="basis-1/3 flex-1">
-            <a href="https://github.com/Aditya-Shitale/TextEditor" target="_blank">
-              <Image
-                src={im4}
-                className="rounded-lg object-cover hover:scale-110 duration-300"
-                w-full
-                h-full
-                layout="responsive"
-                alt=""
-              ></Image>
-              </a>
-            </div>
+      {/* ***************************NEWS MEDIA pic with info***************************** */}
+
+    <div className="basis-1/3 flex-1">
+      <div className="relative">
+         <a href="https://github.com/Aditya-Shitale/News_Media" target="_blank">
+              <Image src={im2}  className="rounded-lg object-cover hover:scale-110 duration-300"  w-full  h-full  layout="responsive"  alt="" />
+                <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
+                  <p className="text-lg text-orange-500 font-bold">NEWSMEDIA- a live news app</p>
+                    <p className="text-xs text-teal-500">This is a site where you can see live news Build using React-Js with help of news API, various sections are made for different types of news.</p>
+             </div>
+          </a>
+      </div>    
+    </div>
+
+
+
+   {/* ***************************CLOUDNOTEBOOK pic with info***************************** */}
+
+    <div className="basis-1/3 flex-1">
+      <div className="realtive">
+        <a href="https://github.com/Aditya-Shitale/CloudNotebook" target="_blank">
+          <Image src={im3} className="rounded-lg object-cover hover:scale-110 duration-300" w-full h-full layout="responsive" alt="" />
+          <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
+                <p className="text-lg text-orange-500 font-bold">CloudNotebook- your own ToDo list</p>
+                  <p className="text-xs text-teal-500">This is site where you can login by your email address and password. You can perform add, update, delete your Notes (crud operations). Its on cloud so you can access it from anywhere. Build using frontend React-Js and MERN stack for backend part.</p>
+             </div>
+        </a>
+      </div>
+    </div>
+
+     {/* ***************************TEXTEDITOR pic with info***************************** */}
+
+    <div className="basis-1/3 flex-1">
+      <div className="relative">
+          <a href="https://github.com/Aditya-Shitale/TextEditor" target="_blank">
+              <Image src={im4} className="rounded-lg object-cover hover:scale-110 duration-300" w-full h-full layout="responsive" alt="" />
+              <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
+                <p className="text-lg text-orange-500 font-bold">TEXT EDITS — editing a text</p>
+                  <p className="text-xs text-teal-500"> This is a site where you can simply edit a text like making it all caps, all small, copy a text, minimum time required to read the entered text, and the number of words in the text, also there is a dark mode option. It is built using React js.</p>
+             </div>
+          </a>
+      </div>
+    </div>
+
+ 
             <div className="basis-1/3 flex-1">
               <Image
                 src={im5}
