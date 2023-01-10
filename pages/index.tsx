@@ -76,7 +76,7 @@ export default function Home() {
 
           {/* ****************Name and basic information about myself*************** */}
           <div className="text-center p-10 " >
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl " >
+            <h2 className="text-7xl py-2 text-teal-600 font-medium md:text-7xl " >
               Aditya Shitale
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl  dark:text-white">
@@ -134,33 +134,26 @@ export default function Home() {
           </div>
           {/* ***************************Card explaining SKills**************************** */}
           {/* *****************card #1************** */}
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-2xl p-10 rounded-xl  my-10   dark:bg-white">
-              <Image
-              className="animate-bounce"
-                src={design}
-                alt=""
-                loading="lazy"
-                width={100}
-                height={100}
-              />
+          <div className="lg:flex gap-10 ">
+            <div className="text-center shadow-2xl p-10 rounded-xl  my-10 w-full md:w-1/3 lg:w-1/3    dark:bg-white">
+              <Image className="animate-bounce" src={design} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Languages</h3>
-              <p className="py-2"> Creating elegant designs suited for your needs following core  design theory. </p>
+              <p className="py-2 w-1/3 md:w-1 "></p>
               <h4 className="py-6 font-bold text-teal-600">Languages  I use</h4>
-            <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im7} alt="C++" height={50}/><p className="text-gray-800 font-bold py-4 pb-5">C++</p></div>
-           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im8} alt=""height={50}/>  <p className="text-gray-800 font-bold py-4 pb-5">JavaScript</p> </div>
-           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im9} alt=""height={50}/>  <p className="text-gray-800 font-bold py-4">HTML</p></div>
-           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im10} alt=""height={50}/> <p className="text-gray-800 font-bold py-4">CSS</p></div>
-           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im11} alt=""height={50}/> <p className="text-gray-800 font-bold py-4">Python</p></div>
-           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im12} alt=""height={50}/> <p className="text-gray-800 font-bold py-4">Dart</p></div>
+            <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im7} alt="" height={50}/><p className="text-gray-800 font-bold py-4 pb-5">C++</p></div>
+           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im8} alt="" height={50}/>  <p className="text-gray-800 font-bold py-4 pb-5">JavaScript</p> </div>
+           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im9} alt="" height={50}/>  <p className="text-gray-800 font-bold py-4">HTML</p></div>
+           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im10} alt="" height={50}/> <p className="text-gray-800 font-bold py-4">CSS</p></div>
+           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im11} alt="" height={50}/> <p className="text-gray-800 font-bold py-4">Python</p></div>
+           <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im12} alt="" height={50}/> <p className="text-gray-800 font-bold py-4">Dart</p></div>
             </div>
 
             {/* *****************card #2************** */}
 
-            <div className="text-center shadow-2xl p-10 rounded-xl  my-10 dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl w-full md:w-1/3 lg:w-1/3  my-10 dark:bg-white">
               <Image className="animate-bounce" src={code} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Framework</h3>
-              <p className="py-2">Creating elegant designs suited for your needs following core  design theory.</p>
+              <p className="py-2 w-1/3 md:w-1 "></p>
               <h4 className="py-6 font-bold text-teal-600">Frameworks tools I use</h4>
              <div className="hover:scale-150 duration-300"> <Image  className="display: inline" height={50} src={im13} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">ReactJs</p></div> 
              <div className="hover:scale-150 duration-300"> <Image  className="display: inline" height={50} src={im16} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">NodeJs</p></div> 
@@ -170,10 +163,10 @@ export default function Home() {
 
             {/* *****************card #3************** */}
 
-            <div className="text-center shadow-2xl p-10 rounded-xl  my-10 dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl w-full md:w-1/3 lg:w-1/3  my-10 dark:bg-white">
               <Image className="animate-bounce" src={consulting} alt="" width={100}  height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">tools i use</h3>
-              <p className="py-2 ">  Creating elegant designs suited for your needs following core design theory. </p>
+              <p className="py-2 w-1/3 md:w-1  "> </p>
              <h4 className="py-6 font-bold text-teal-600">tools I use</h4>
               <div className="hover:scale-150 duration-300"> <Image  className="display: inline " height={50} src={im17} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">Git</p> </div>
               <div className="hover:scale-150 duration-300"> <Image  className="display: inline " height={50} src={im18} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">Github</p></div>
