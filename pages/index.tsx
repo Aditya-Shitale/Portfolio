@@ -208,7 +208,7 @@ export default function Home() {
           <Image src={im1} className="rounded-lg object-cover"  w-full  h-full  layout="responsive"  alt="" />
              <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
                 <p className="text-lg text-orange-500 font-bold">  Chat-App</p>
-                  <p className="text-xs text-white">This a is chat Application based on React-Js and backend as firebase, here you can create an account by unique mail id's and also can set your profile picture, find friends by searching if they have an account on app</p>
+                  <p className="text-xs text-white">This a is chat Application based on React-Js and backend as firebase, here you can create an account by unique mail ids and also can set your profile picture, find friends by searching if they have an account on app</p>
              </div>
       </a>
      </div>
