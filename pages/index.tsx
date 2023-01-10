@@ -65,7 +65,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                   href="https://drive.google.com/file/d/1mTl5d39cg0njSroEPar7_zDRs-cuV6t_/view?usp=sharing"
                 >
                   Resume
@@ -91,14 +91,14 @@ export default function Home() {
 
           {/* *********************React icons with contact details************************ */}
           <div className="text-2xl flex justify-center gap-16 py-3 text-gray-600  dark:text-white" >
-               <a href="https://twitter.com/AdityaShitale" target="_blank"><AiFillTwitterCircle /></a>
+               <a href="https://twitter.com/AdityaShitale" target="_blank" rel="noreferrer"><AiFillTwitterCircle /></a>
 
-               <a href="https://www.linkedin.com/in/aditya-shitale-664991214/" target="_blank" ><AiFillLinkedin /></a>
+               <a href="https://www.linkedin.com/in/aditya-shitale-664991214/" target="_blank" rel="noreferrer" ><AiFillLinkedin /></a>
 
-               <a href="https://github.com/Aditya-Shitale" target="_blank"> <AiFillGithub /></a>
+               <a href="https://github.com/Aditya-Shitale" target="_blank" rel="noreferrer"> <AiFillGithub /></a>
 
-               <a href="mailto:adityashitale4@gmail.com" target="_blank"><AiFillMail /></a>
-               <a href="https://leetcode.com/Adityashitale/" target="_blank"><SiLeetcode /></a>
+               <a href="mailto:adityashitale4@gmail.com" target="_blank" rel="noreferrer"><AiFillMail /></a>
+               <a href="https://leetcode.com/Adityashitale/" target="_blank" rel="noreferrer"><SiLeetcode /></a>
           </div>
 
           {/* ***************emoji icon saying hi to visitor****************** */}
@@ -204,7 +204,7 @@ export default function Home() {
    {/* ***************************CHATAPP pic with info***************************** */}
   <div className="basis-1/3 flex-1 ">
     <div className="relative hover:scale-110 duration-300">
-      <a href="https://github.com/Aditya-Shitale/Chat-App" target="_blank">
+      <a href="https://github.com/Aditya-Shitale/Chat-App" target="_blank" rel="noreferrer">
           <Image src={im1} className="rounded-lg object-cover"  w-full  h-full  layout="responsive"  alt="" />
              <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
                 <p className="text-lg text-orange-500 font-bold">  Chat-App</p>
@@ -212,7 +212,7 @@ export default function Home() {
              </div>
       </a>
      </div>
-     <a href="https://github.com/Aditya-Shitale/Chat-App" target="_blank"> <AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></a> 
+     <a href="https://github.com/Aditya-Shitale/Chat-App" target="_blank" rel="noreferrer"> <AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></a> 
 
   </div>
 
@@ -220,7 +220,7 @@ export default function Home() {
 
     <div className="basis-1/3 flex-1">
       <div className="relative hover:scale-110 duration-300">
-         <a href="https://github.com/Aditya-Shitale/News_Media" target="_blank">
+         <a href="https://github.com/Aditya-Shitale/News_Media" target="_blank" rel="noreferrer">
               <Image src={im2}  className="rounded-lg object-cover "  w-full  h-full  layout="responsive"  alt="" />
                 <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
                   <p className="text-lg text-orange-500 font-bold">NEWSMEDIA- a live news app</p>
@@ -228,7 +228,7 @@ export default function Home() {
              </div>
           </a>
       </div> 
-      <a href="https://github.com/Aditya-Shitale/News_Media" target="_blank"> <p><AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a>    
+      <a href="https://github.com/Aditya-Shitale/News_Media" target="_blank" rel="noreferrer"> <p><AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a>    
     </div>
 
 
@@ -237,7 +237,7 @@ export default function Home() {
 
    <div className="basis-1/3 flex-1">
       <div className="relative hover:scale-110 duration-300">
-         <a href="https://github.com/Aditya-Shitale/CloudNotebook" target="_blank">
+         <a href="https://github.com/Aditya-Shitale/CloudNotebook" target="_blank" rel="noreferrer">
               <Image src={im3}  className="rounded-lg object-cover "  w-full  h-full  layout="responsive"  alt="" />
                 <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
                   <p className="text-lg text-orange-500 font-bold">CloudNotebook- your own TO DO List</p>
@@ -245,7 +245,7 @@ export default function Home() {
              </div>
           </a>
       </div>  
-      <a href="https://github.com/Aditya-Shitale/CloudNotebook" target="_blank"> <p><AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a>   
+      <a href="https://github.com/Aditya-Shitale/CloudNotebook" target="_blank" rel="noreferrer"> <p><AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a>   
     </div>
 
 
@@ -253,7 +253,7 @@ export default function Home() {
 
     <div className="basis-1/3 flex-1">
       <div className="relative hover:scale-110 duration-300">
-          <a href="https://github.com/Aditya-Shitale/TextEditor" target="_blank">
+          <a href="https://github.com/Aditya-Shitale/TextEditor" target="_blank" rel="noreferrer">
               <Image src={im4} className="rounded-lg object-cover " w-full h-full layout="responsive" alt="" />
               <div className="absolute bottom-0 left-0 right-0 px-4 py-2 bg-gray-800 opacity-70">
                 <p className="text-lg text-orange-500 font-bold">TEXT EDITS — editing a text</p>
@@ -261,7 +261,7 @@ export default function Home() {
              </div>
           </a>
       </div>
-        <a href="https://github.com/Aditya-Shitale/TextEditor" target="_blank"> <p><AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a> 
+        <a href="https://github.com/Aditya-Shitale/TextEditor" target="_blank" rel="noreferrer"> <p><AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a> 
     </div>
 
  
