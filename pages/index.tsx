@@ -13,7 +13,7 @@ import adi from "../public/wave.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
-import im1 from "../public/chatFinal.png";
+import im1 from "../public/ChatFinal.png";
 import im2 from "../public/newsfinal.png";
 import im3 from "../public/nodefinal.png";
 import im4 from "../public/textfinal.png";
