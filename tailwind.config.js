@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        fadeIn: "fadeIn 2s ease-in forwards"
+        'spin-slow': 'spin 4s linear infinite',
       },
       keyframes: {
         fadeIn: {

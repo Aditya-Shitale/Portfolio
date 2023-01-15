@@ -7,6 +7,7 @@ import {
   AiFillMail,
   AiFillHeart,
 } from "react-icons/ai";
+import{BiLinkExternal} from "react-icons/bi"
 import {SiLeetcode} from "react-icons/si"
 import Image from "next/image";
 import adi from "../public/wave.png";
@@ -155,7 +156,7 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2">Framework</h3>
               <p className="py-2 w-1/3 md:w-1 "></p>
               <h4 className="py-6 font-bold text-teal-600">Frameworks tools I use</h4>
-             <div className="hover:scale-150 duration-300"> <Image  className="display: inline" height={50} src={im13} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">ReactJs</p></div> 
+             <div className="hover:scale-150 duration-300"> <Image  className="display: inline animate-spin-slow" height={50} src={im13} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">ReactJs</p></div> 
              <div className="hover:scale-150 duration-300"> <Image  className="display: inline" height={50} src={im16} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">NodeJs</p></div> 
              <div className="hover:scale-150 duration-300"> <Image  className="display: inline" height={50} src={im14} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">Next.js</p></div> 
              <div className="hover:scale-150 duration-300"> <Image  className="display: inline" height={50} src={im15} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">Flutter</p></div> 
@@ -194,7 +195,7 @@ export default function Home() {
               I make which have a ReactJS frontend.I also have basic Idea about
               Flutter for App development.
             </p>
-            <p className="text-md py-2 leading-8 font-burtons text-gray-800 dark:text-white">
+            <p className="text-3xl py-1 font-bold  dark:text-white">
               Checkout my other projects............!  !  !
             </p>
             <p className="font-serif text-md dark:text-white">Click on the image to go on respective repository</p>
@@ -212,7 +213,11 @@ export default function Home() {
              </div>
       </a>
      </div>
+     <div className="flex flex-row gap-2">
      <a href="https://github.com/Aditya-Shitale/Chat-App" target="_blank" rel="noreferrer"> <AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></a> 
+     <a href="https://chat-app-wheat-two.vercel.app/" target="_blank" rel="noreferrer"> <p><BiLinkExternal className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a> 
+      
+     </div>
 
   </div>
 
@@ -228,7 +233,9 @@ export default function Home() {
              </div>
           </a>
       </div> 
-      <a href="https://github.com/Aditya-Shitale/News_Media" target="_blank" rel="noreferrer"> <p><AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a>    
+      <div>
+      <a href="https://github.com/Aditya-Shitale/News_Media" target="_blank" rel="noreferrer"> <AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></a> 
+      </div>
     </div>
 
 
@@ -261,7 +268,10 @@ export default function Home() {
              </div>
           </a>
       </div>
-        <a href="https://github.com/Aditya-Shitale/TextEditor" target="_blank" rel="noreferrer"> <p><AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a> 
+     <div className="flex flex-row gap-2">
+        <a  href="https://github.com/Aditya-Shitale/TextEditor" target="_blank" rel="noreferrer"> <p><AiFillGithub className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a> 
+        <a href="https://text-editor-cyan.vercel.app/" target="_blank" rel="noreferrer"> <p><BiLinkExternal className="text-black text-xl hover:scale-100 duration-105 dark:text-white " /></p></a> 
+      </div>
     </div>
 
  
