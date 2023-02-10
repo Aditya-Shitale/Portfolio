@@ -21,6 +21,9 @@ module.exports = {
       },
       variants: {
         animation: ["motion-safe"]
+    },
+    screens: {
+      'tablet': '1018px',
     }
     
     },

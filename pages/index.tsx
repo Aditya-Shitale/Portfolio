@@ -7,6 +7,7 @@ import {
   AiFillMail,
   AiFillHeart,
 } from "react-icons/ai";
+import {HiOutlineExternalLink} from "react-icons/hi"
 import{BiLinkExternal} from "react-icons/bi"
 import {SiLeetcode} from "react-icons/si"
 import Image from "next/image";
@@ -33,6 +34,8 @@ import im16 from "../public/node.png";
 import im17 from "../public/git.png";
 import im18 from "../public/github.png";
 import im19 from "../public/bash.png";
+import im20 from "../public/name_l2e.png";
+import Typewriter from 'typewriter-effect';
 import { useState } from "react";
 
 
@@ -56,8 +59,14 @@ export default function Home() {
           {/* ****************************Navbar containing resume and dark mode button************** */}
 
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons  dark:text-white">
-              DevelopedbyAdi
+                      <h1 className="text-xl font-burtons  dark:text-white">
+                      <Typewriter
+            options={{
+              strings: ['DevelopedByAdi', 'Hey Visitor...!!!'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
             </h1>
             <ul className="flex items-center">
               <li className="cursor-pointer text-2xl">
@@ -81,7 +90,13 @@ export default function Home() {
               Aditya Shitale
             </h2>
             <h3 className="text-2xl py-2 md:text-3xl  dark:text-white">
-              Developer and Coder.
+                      <Typewriter
+            options={{
+              strings: ['Full-Stack Developer', 'Open-to-work'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto  dark:text-white">
               I am a student at Indian Institute of Information
@@ -136,7 +151,7 @@ export default function Home() {
           {/* ***************************Card explaining SKills**************************** */}
           {/* *****************card #1************** */}
           <div className="lg:flex gap-10 ">
-            <div className="text-center shadow-2xl p-10 rounded-xl  my-10 w-full md:w-1/3 lg:w-1/3    dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl  my-10 w-full  lg:w-1/3   dark:bg-white">
               <Image className="animate-bounce" src={design} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Languages</h3>
               <p className="py-2 w-1/3 md:w-1 "></p>
@@ -151,7 +166,7 @@ export default function Home() {
 
             {/* *****************card #2************** */}
 
-            <div className="text-center shadow-2xl p-10 rounded-xl w-full md:w-1/3 lg:w-1/3  my-10 dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl w-full  lg:w-1/3  my-10 dark:bg-white">
               <Image className="animate-bounce" src={code} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Framework</h3>
               <p className="py-2 w-1/3 md:w-1 "></p>
@@ -164,7 +179,7 @@ export default function Home() {
 
             {/* *****************card #3************** */}
 
-            <div className="text-center shadow-2xl p-10 rounded-xl w-full md:w-1/3 lg:w-1/3  my-10 dark:bg-white">
+            <div className="text-center shadow-2xl p-10 rounded-xl w-full lg:w-1/3  my-10 dark:bg-white">
               <Image className="animate-bounce" src={consulting} alt="" width={100}  height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">tools i use</h3>
               <p className="py-2 w-1/3 md:w-1  "> </p>
@@ -175,6 +190,26 @@ export default function Home() {
         
             </div>
           </div>
+        </section>
+
+        <section>
+          <div>
+          <h3 className="text-3xl py-1 font-bold  dark:text-white">Experience</h3>
+          <div className="text-center flex flex-col shadow-2xl p-10 rounded-xl w-full gap-3  my-10 lg:flex-row dark:bg-white">
+             <a href="https://login2explore.com/" target="_blank" rel="noreferrer"> <div><Image className="w-auto h-30 my-7 md:h-20" src={im20} alt="" /></div></a>
+                <div>
+                  <text className="font-bold">Position: Full-Stack Developer Intern</text><br/>
+                  Login2Xplore offers ready to use <span className="text-teal-500">JsonPowerDB API </span>for making work efficiently, effectively and faster.
+                   Worked with this new Database <span className="text-teal-500">Devevloped</span> a dashboard fetching data from this database using its own API calls,
+                   where you can do CRUD operations on your data and can download your data in various formats.
+                   <span className="font-bold text-teal-500 "> Tech-Stack:</span> JavaScript,jQuery,Bootstrap
+                   <br/>
+                   <a href="https://drive.google.com/file/d/10_8qqOjXzj8PtDMsV7HhRGSLFQ9EK3vx/view?usp=share_link" target="_blank" rel="noreferrer" ><div className="font-bold flex flex-row">Certificate<HiOutlineExternalLink></HiOutlineExternalLink></div>
+                   </a>
+                  </div>
+              
+                 </div>
+              </div>
         </section>
 
         {/* ***************************SECTION 3 start************************************* */}
@@ -195,7 +230,7 @@ export default function Home() {
               I make which have a ReactJS frontend.I also have basic Idea about
               Flutter for App development.
             </p>
-            <p className="text-3xl py-1 font-bold  dark:text-white">
+            <p className="text-3xl py-1 my-10 font-bold  dark:text-white">
               Checkout my other projects............!  !  !
             </p>
             <p className="font-serif text-md dark:text-white">Click on the image to go on respective repository</p>
