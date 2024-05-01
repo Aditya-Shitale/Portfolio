@@ -40,6 +40,7 @@ import Typewriter from "typewriter-effect";
 import { useState } from "react";
 import { motion, useScroll } from "framer-motion";
 
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   return (
