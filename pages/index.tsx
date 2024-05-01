@@ -610,7 +610,7 @@ export default function Home() {
                   Explainable AI with Blockchain (Machine learning,ReactJS,
                   solidity): 
                 </b>{" "}
-                  (Bachelor's project)
+                  (Bachelor&apos;s project)
                   <a
                   href="https://github.com/Aditya-Shitale/BTP_42"
                   target="_blank"
