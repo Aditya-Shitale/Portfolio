@@ -35,9 +35,10 @@ import im17 from "../public/git.png";
 import im18 from "../public/github.png";
 import im19 from "../public/bash.png";
 import im20 from "../public/name_l2e.png";
+import im21 from "../public/Apoorv.png";
 import Typewriter from 'typewriter-effect';
 import { useState } from "react";
-
+import { motion , useScroll } from 'framer-motion'
 
 
 
@@ -99,9 +100,7 @@ export default function Home() {
           />
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto  dark:text-white">
-              I am a student at Indian Institute of Information
-              Technology,Kottayam, currently pursuing B.Tech in computer Science
-              (2024),You can contact me from Clicking below.
+            I am a recent graduate of <b> Indian Institute of Information Technology, Kottayam</b>, holding a B.Tech degree in Computer Science (2024). You can reach out to me by clicking below.
             </p>
           </div>
 
@@ -118,15 +117,48 @@ export default function Home() {
           </div>
 
           {/* ***************emoji icon saying hi to visitor****************** */}
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 motion-safe:animate-pulse">
+          <motion.div 
+          initial="hidden" whileInView="visible" variants={{
+            hidden: {
+              opacity: 0,
+              y: 20,
+            },
+            visible: {
+      
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.25,
+      
+              }
+            },
+          }}
+          className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 motion-safe:animate-pulse">
             <Image src={adi} alt="" layout="fill" objectFit="cover" />
-          </div>
+          </motion.div>
         </section>
 
         {/* ***************************SECTION 2 start************************************* */}
         <section>
           {/* *****************************services i offer and description about it**************************** */}
-          <div>
+          <motion.div 
+          initial="hidden" whileInView="visible" variants={{
+            hidden: {
+      
+              opacity: 0,
+              x: 20,
+            },
+            visible: {
+      
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+      
+              }
+            },
+          }}
+          >
             <h3 className="text-3xl py-1 font-bold  dark:text-white">
               Skills I have
             </h3>
@@ -147,11 +179,28 @@ export default function Home() {
               I offer from a wide range of services, including frontend development,
               backend development,App developement,Web developement.
             </p>
-          </div>
+          </motion.div>
           {/* ***************************Card explaining SKills**************************** */}
           {/* *****************card #1************** */}
           <div className="lg:flex gap-10 ">
-            <div className="text-center shadow-2xl p-10 rounded-xl  my-10 w-full  lg:w-1/3   dark:bg-white">
+            <motion.div 
+            initial="hidden" whileInView="visible" variants={{
+              hidden: {
+        
+                opacity: 0,
+                x: 20,
+              },
+              visible: {
+        
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+        
+                }
+              },
+            }}
+            className="text-center shadow-2xl p-10 rounded-xl  my-10 w-full  lg:w-1/3   dark:bg-white">
               <Image className="animate-bounce" src={design} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Languages</h3>
               <p className="py-2 w-1/3 md:w-1 "></p>
@@ -162,11 +211,28 @@ export default function Home() {
            <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im10} alt="" height={50}/> <p className="text-gray-800 font-bold py-4">CSS</p></div>
            <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im11} alt="" height={50}/> <p className="text-gray-800 font-bold py-4">Python</p></div>
            <div className="hover:scale-150 duration-300"> <Image className="display: inline" src={im12} alt="" height={50}/> <p className="text-gray-800 font-bold py-4">Dart</p></div>
-            </div>
+            </motion.div>
 
             {/* *****************card #2************** */}
 
-            <div className="text-center shadow-2xl p-10 rounded-xl w-full  lg:w-1/3  my-10 dark:bg-white">
+            <motion.div 
+            initial="hidden" whileInView="visible" variants={{
+              hidden: {
+        
+                opacity: 0,
+                x: 20,
+              },
+              visible: {
+        
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+        
+                }
+              },
+            }}
+            className="text-center shadow-2xl p-10 rounded-xl w-full  lg:w-1/3  my-10 dark:bg-white">
               <Image className="animate-bounce" src={code} alt="" width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Framework</h3>
               <p className="py-2 w-1/3 md:w-1 "></p>
@@ -175,11 +241,28 @@ export default function Home() {
              <div className="hover:scale-150 duration-300"> <Image  className="display: inline" height={50} src={im16} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">NodeJs</p></div> 
              <div className="hover:scale-150 duration-300"> <Image  className="display: inline" height={50} src={im14} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">Next.js</p></div> 
              <div className="hover:scale-150 duration-300"> <Image  className="display: inline" height={50} src={im15} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">Flutter</p></div> 
-            </div>
+            </motion.div>
 
             {/* *****************card #3************** */}
 
-            <div className="text-center shadow-2xl p-10 rounded-xl w-full lg:w-1/3  my-10 dark:bg-white">
+            <motion.div
+            initial="hidden" whileInView="visible" variants={{
+              hidden: {
+        
+                opacity: 0,
+                x: 20,
+              },
+              visible: {
+        
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+        
+                }
+              },
+            }}
+            className="text-center shadow-2xl p-10 rounded-xl w-full lg:w-1/3  my-10 dark:bg-white">
               <Image className="animate-bounce" src={consulting} alt="" width={100}  height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">tools i use</h3>
               <p className="py-2 w-1/3 md:w-1  "> </p>
@@ -188,12 +271,27 @@ export default function Home() {
               <div className="hover:scale-150 duration-300"> <Image  className="display: inline " height={50} src={im18} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">Github</p></div>
               <div className="hover:scale-150 duration-300"> <Image  className="display: inline " height={50} src={im19} alt=""/> <p className="text-gray-800 font-bold py-4 pb-5">bash</p></div>
         
-            </div>
+            </motion.div>
           </div>
         </section>
 
         <section>
-          <div>
+          <motion.div   initial="hidden" whileInView="visible" variants={{
+            hidden: {
+      
+              opacity: 0,
+              x: 20,
+            },
+            visible: {
+      
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+      
+              }
+            },
+          }}>
           <h3 className="text-3xl py-1 font-bold  dark:text-white">Experience</h3>
           <div className="text-center flex flex-col shadow-2xl p-10 rounded-xl w-full gap-3  my-10 lg:flex-row dark:bg-white">
              <a href="https://login2explore.com/" target="_blank" rel="noreferrer"> <div><Image className="w-auto h-30 my-7 md:h-20" src={im20} alt="" /></div></a>
@@ -209,14 +307,42 @@ export default function Home() {
                   </div>
               
                  </div>
-              </div>
+          <div className="text-center flex flex-col shadow-2xl p-10 rounded-xl w-full gap-3  my-10 lg:flex-row dark:bg-white">
+             {/* <a href="https://apoorviiitk.co/" target="_blank" rel="noreferrer"> <div><Image className="w-auto rounded-lg h-40 mx-40 md:mx-1 md:h-20" src={im21} alt="" /></div></a> */}
+                <div>
+                  <text className="font-bold">Frontend Development-apoorv(2023)</text><br/>
+                  Website Development: I had the opportunity to work on the development of the <span className="text-teal-500">Apoorv website </span>, which was the
+official website for our college&#39;s annual <span className="text-teal-500">Techno-cultural</span> fest.Through this experience, I gained valuable skills in web
+development and project management, and learned how to work effectively in a team environment.
+                   <span className="font-bold text-teal-500 "> Tech-Stack:</span> JavaScript,Next-JS
+                   <br/>
+                  </div>
+              
+                 </div>
+                 
+              </motion.div>
         </section>
 
         {/* ***************************SECTION 3 start************************************* */}
 
         <section>
           {/* ***************************portfolio explaining about my projects and experiences************************** */}
-          <div>
+          <motion.div   initial="hidden" whileInView="visible" variants={{
+            hidden: {
+      
+              opacity: 0,
+              x: 20,
+            },
+            visible: {
+      
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+      
+              }
+            },
+          }}>
             <h3 className="text-3xl py-1 font-bold  dark:text-white">Portfolio</h3>
             <p className="text-md font-serif py-2 leading-8 text-gray-800  dark:text-white">
               Since the start I am working as individual and created projects to
@@ -234,8 +360,25 @@ export default function Home() {
               Checkout my other projects............!  !  !
             </p>
             <p className="font-serif text-md dark:text-white">Click on the image to go on respective repository</p>
-          </div>
-<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          </motion.div>
+<motion.div
+  initial="hidden" whileInView="visible" variants={{
+    hidden: {
+
+      opacity: 0,
+      x: 20,
+    },
+    visible: {
+
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 1,
+
+      }
+    },
+  }}
+className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 
    {/* ***************************CHATAPP pic with info***************************** */}
   <div className="basis-1/3 flex-1 ">
@@ -330,7 +473,7 @@ export default function Home() {
                 alt=""
               ></Image>
             </div> */}
-          </div>
+          </motion.div>
         </section>
 
         {/* ***************************SECTION 4 start FOOTER************************************* */}
