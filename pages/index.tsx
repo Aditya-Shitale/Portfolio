@@ -552,7 +552,7 @@ export default function Home() {
                 JavaScript,Next-JS
                 <br />
                 <a
-                  href="https://apoorviiitk.co/"
+                  href="https://apoorv-nine.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
